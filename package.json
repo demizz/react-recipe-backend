@@ -6,14 +6,13 @@
   "scripts": {
     "server": "nodemon server.js",
     "client": "cd client && npm start",
-    "dev":
-      "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\""
+    "dev": "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^1.3.6",
-    "bcrypt": "^2.0.1",
+    "bcryptjs": "^2.0.1",
     "body-parser": "^1.18.3",
     "concurrently": "^3.5.1",
     "cors": "^2.8.4",
