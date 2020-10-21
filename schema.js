@@ -1,4 +1,4 @@
-exports.typeDefs=`
+exports.typeDefs = `
 type Recipe{
     _id:ID
     name:String!
@@ -39,6 +39,7 @@ type Mutation{
     deleteUserRecipe(_id:ID):Recipe
     likeRecipe(_id:ID,username:String!):Recipe
     unlikeRecipe(_id:ID,username:String!):Recipe
+    editRecipe(_id:ID,name:String!,description:String!,category:String,imageUrl:String!):Recipe
 }
 
 `;

@@ -143,5 +143,19 @@ exports.resolvers = {
 			);
 			return recipe;
 		},
+		editRecipe: async (
+			root,
+			{ _id, name, imageUrl, description, category },
+			{ Recipe }
+		) => {
+			const recipe = await Recipe.findOneAndUpdate(
+				{
+					_id,
+				},
+				{ name, imageUrl, description, category },
+				{ new: true }
+			);
+			return recipe;
+		},
 	},
 };
